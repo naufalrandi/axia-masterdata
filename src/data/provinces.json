@@ -1,0 +1,353 @@
+{
+"provinces": [
+	{
+		"id" : 11,
+		"name" : "Aceh",
+		"alt_name" : "Aceh",
+		"latitude" : 4.36855,
+		"longitude" : 97.0253,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 12,
+		"name" : "Sumatera Utara",
+		"alt_name" : "Sumatera Utara",
+		"latitude" : 2.19235,
+		"longitude" : 99.38122,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 13,
+		"name" : "Sumatera Barat",
+		"alt_name" : "Sumatera Barat",
+		"latitude" : -1.34225,
+		"longitude" : 100.0761,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 14,
+		"name" : "Riau",
+		"alt_name" : "Riau",
+		"latitude" : 0.50041,
+		"longitude" : 101.54758,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 15,
+		"name" : "Jambi",
+		"alt_name" : "Jambi",
+		"latitude" : -1.61157,
+		"longitude" : 102.7797,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 16,
+		"name" : "Sumatera Selatan",
+		"alt_name" : "Sumatera Selatan",
+		"latitude" : -3.12668,
+		"longitude" : 104.09306,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 17,
+		"name" : "Bengkulu",
+		"alt_name" : "Bengkulu",
+		"latitude" : -3.51868,
+		"longitude" : 102.53598,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 18,
+		"name" : "Lampung",
+		"alt_name" : "Lampung",
+		"latitude" : -4.8555,
+		"longitude" : 105.0273,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 19,
+		"name" : "Kepulauan Bangka Belitung",
+		"alt_name" : "Kepulauan Bangka Belitung",
+		"latitude" : -2.75775,
+		"longitude" : 107.58394,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 74,
+		"name" : "Sulawesi Tenggara",
+		"alt_name" : "Sulawesi Tenggara",
+		"latitude" : -3.54912,
+		"longitude" : 121.72796,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 75,
+		"name" : "Gorontalo",
+		"alt_name" : "Gorontalo",
+		"latitude" : 0.71862,
+		"longitude" : 122.45559,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 76,
+		"name" : "Sulawesi Barat",
+		"alt_name" : "Sulawesi Barat",
+		"latitude" : -2.49745,
+		"longitude" : 119.3919,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 81,
+		"name" : "Maluku",
+		"alt_name" : "Maluku",
+		"latitude" : -3.11884,
+		"longitude" : 129.42078,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 82,
+		"name" : "Maluku Utara",
+		"alt_name" : "Maluku Utara",
+		"latitude" : 0.63012,
+		"longitude" : 127.97202,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 91,
+		"name" : "Papua Barat",
+		"alt_name" : "Papua Barat",
+		"latitude" : -1.38424,
+		"longitude" : 132.90253,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 94,
+		"name" : "Papua",
+		"alt_name" : "Papua",
+		"latitude" : -3.98857,
+		"longitude" : 138.34853,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 95,
+		"name" : "Wakanda Forever",
+		"alt_name" : "Wakanda Forever",
+		"latitude" : 999.9,
+		"longitude" : 999.9,
+		"createdAt" : "2025-03-21T07:38:59.230Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 31,
+		"name" : "Daerah Khusus Ibukota Jakarta",
+		"alt_name" : "Daerah Khusus Ibukota Jakarta",
+		"latitude" : 6.1745,
+		"longitude" : 106.8227,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 34,
+		"name" : "Daerah Istimewa Yogyakarta",
+		"alt_name" : "Daerah Istimewa Yogyakarta",
+		"latitude" : 7.7956,
+		"longitude" : 110.3695,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 21,
+		"name" : "Kepulauan Riau",
+		"alt_name" : "Kepulauan Riau",
+		"latitude" : -0.15478,
+		"longitude" : 104.58037,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 32,
+		"name" : "Jawa Barat",
+		"alt_name" : "Jawa Barat",
+		"latitude" : -6.88917,
+		"longitude" : 107.64047,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 33,
+		"name" : "Jawa Tengah",
+		"alt_name" : "Jawa Tengah",
+		"latitude" : -7.30324,
+		"longitude" : 110.00441,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 35,
+		"name" : "Jawa Timur",
+		"alt_name" : "Jawa Timur",
+		"latitude" : -6.96851,
+		"longitude" : 113.98005,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 36,
+		"name" : "Banten",
+		"alt_name" : "Banten",
+		"latitude" : -6.44538,
+		"longitude" : 106.13756,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 51,
+		"name" : "Bali",
+		"alt_name" : "Bali",
+		"latitude" : -8.23566,
+		"longitude" : 115.12239,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 52,
+		"name" : "Nusa Tenggara Barat",
+		"alt_name" : "Nusa Tenggara Barat",
+		"latitude" : -8.12179,
+		"longitude" : 117.63696,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 53,
+		"name" : "Nusa Tenggara Timur",
+		"alt_name" : "Nusa Tenggara Timur",
+		"latitude" : -8.56568,
+		"longitude" : 120.69786,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 61,
+		"name" : "Kalimantan Barat",
+		"alt_name" : "Kalimantan Barat",
+		"latitude" : -0.13224,
+		"longitude" : 111.09689,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 62,
+		"name" : "Kalimantan Tengah",
+		"alt_name" : "Kalimantan Tengah",
+		"latitude" : -1.49958,
+		"longitude" : 113.29033,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 63,
+		"name" : "Kalimantan Selatan",
+		"alt_name" : "Kalimantan Selatan",
+		"latitude" : -2.94348,
+		"longitude" : 115.37565,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 64,
+		"name" : "Kalimantan Timur",
+		"alt_name" : "Kalimantan Timur",
+		"latitude" : 0.78844,
+		"longitude" : 116.242,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 65,
+		"name" : "Kalimantan Utara",
+		"alt_name" : "Kalimantan Utara",
+		"latitude" : 2.72594,
+		"longitude" : 116.911,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 71,
+		"name" : "Sulawesi Utara",
+		"alt_name" : "Sulawesi Utara",
+		"latitude" : 0.65557,
+		"longitude" : 124.09015,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 72,
+		"name" : "Sulawesi Tengah",
+		"alt_name" : "Sulawesi Tengah",
+		"latitude" : -1.69378,
+		"longitude" : 120.80886,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	},
+	{
+		"id" : 73,
+		"name" : "Sulawesi Selatan",
+		"alt_name" : "Sulawesi Selatan",
+		"latitude" : -3.64467,
+		"longitude" : 119.94719,
+		"createdAt" : "2024-11-20T06:56:30.223Z",
+		"updatedAt" : "2025-06-23T05:03:18.400Z",
+		"country_id" : 104
+	}
+]}

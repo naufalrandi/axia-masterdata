@@ -1,0 +1,422 @@
+[
+  {
+    "country": "United States",
+    "currency_name": "United States Dollar",
+    "iso_code": "USD",
+    "symbol": "$"
+  },
+  {
+    "country": "Eurozone (single currency)",
+    "currency_name": "Euro",
+    "iso_code": "EUR",
+    "symbol": "€"
+  },
+  {
+    "country": "Japan",
+    "currency_name": "Japanese Yen",
+    "iso_code": "JPY",
+    "symbol": "¥"
+  },
+  {
+    "country": "United Kingdom",
+    "currency_name": "Pound Sterling",
+    "iso_code": "GBP",
+    "symbol": "£"
+  },
+  {
+    "country": "Australia",
+    "currency_name": "Australian Dollar",
+    "iso_code": "AUD",
+    "symbol": "$"
+  },
+  {
+    "country": "Canada",
+    "currency_name": "Canadian Dollar",
+    "iso_code": "CAD",
+    "symbol": "$"
+  },
+  {
+    "country": "Switzerland",
+    "currency_name": "Swiss Franc",
+    "iso_code": "CHF",
+    "symbol": "CHF"
+  },
+  {
+    "country": "China",
+    "currency_name": "Renminbi (Yuan)",
+    "iso_code": "CNY",
+    "symbol": "¥"
+  },
+  {
+    "country": "Hong Kong",
+    "currency_name": "Hong Kong Dollar",
+    "iso_code": "HKD",
+    "symbol": "$"
+  },
+  {
+    "country": "New Zealand",
+    "currency_name": "New Zealand Dollar",
+    "iso_code": "NZD",
+    "symbol": "$"
+  },
+  {
+    "country": "Sweden",
+    "currency_name": "Swedish Krona",
+    "iso_code": "SEK",
+    "symbol": "kr"
+  },
+  {
+    "country": "South Korea",
+    "currency_name": "South Korean Won",
+    "iso_code": "KRW",
+    "symbol": "₩"
+  },
+  {
+    "country": "Singapore",
+    "currency_name": "Singapore Dollar",
+    "iso_code": "SGD",
+    "symbol": "$"
+  },
+  {
+    "country": "Norway",
+    "currency_name": "Norwegian Krone",
+    "iso_code": "NOK",
+    "symbol": "kr"
+  },
+  {
+    "country": "Mexico",
+    "currency_name": "Mexican Peso",
+    "iso_code": "MXN",
+    "symbol": "$"
+  },
+  {
+    "country": "India",
+    "currency_name": "Indian Rupee",
+    "iso_code": "INR",
+    "symbol": "₹"
+  },
+  {
+    "country": "Russia",
+    "currency_name": "Russian Ruble",
+    "iso_code": "RUB",
+    "symbol": "₽"
+  },
+  {
+    "country": "South Africa",
+    "currency_name": "South African Rand",
+    "iso_code": "ZAR",
+    "symbol": "R"
+  },
+  {
+    "country": "Turkey",
+    "currency_name": "Turkish Lira",
+    "iso_code": "TRY",
+    "symbol": "₺"
+  },
+  {
+    "country": "Brazil",
+    "currency_name": "Brazilian Real",
+    "iso_code": "BRL",
+    "symbol": "R$"
+  },
+  {
+    "country": "Indonesia",
+    "currency_name": "Indonesian Rupiah",
+    "iso_code": "IDR",
+    "symbol": "Rp"
+  },
+  {
+    "country": "Saudi Arabia",
+    "currency_name": "Saudi Riyal",
+    "iso_code": "SAR",
+    "symbol": "﷼"
+  },
+  {
+    "country": "United Arab Emirates",
+    "currency_name": "UAE Dirham",
+    "iso_code": "AED",
+    "symbol": "د.إ"
+  },
+  {
+    "country": "Denmark",
+    "currency_name": "Danish Krone",
+    "iso_code": "DKK",
+    "symbol": "kr"
+  },
+  {
+    "country": "Poland",
+    "currency_name": "Polish Zloty",
+    "iso_code": "PLN",
+    "symbol": "zł"
+  },
+  {
+    "country": "Thailand",
+    "currency_name": "Thai Baht",
+    "iso_code": "THB",
+    "symbol": "฿"
+  },
+  {
+    "country": "Hungary",
+    "currency_name": "Hungarian Forint",
+    "iso_code": "HUF",
+    "symbol": "Ft"
+  },
+  {
+    "country": "Czech Republic",
+    "currency_name": "Czech Koruna",
+    "iso_code": "CZK",
+    "symbol": "Kč"
+  },
+  {
+    "country": "Israel",
+    "currency_name": "Israeli New Shekel",
+    "iso_code": "ILS",
+    "symbol": "₪"
+  },
+  {
+    "country": "Malaysia",
+    "currency_name": "Malaysian Ringgit",
+    "iso_code": "MYR",
+    "symbol": "RM"
+  },
+  {
+    "country": "Philippines",
+    "currency_name": "Philippine Peso",
+    "iso_code": "PHP",
+    "symbol": "₱"
+  },
+  {
+    "country": "Chile",
+    "currency_name": "Chilean Peso",
+    "iso_code": "CLP",
+    "symbol": "$"
+  },
+  {
+    "country": "Colombia",
+    "currency_name": "Colombian Peso",
+    "iso_code": "COP",
+    "symbol": "$"
+  },
+  {
+    "country": "Argentina",
+    "currency_name": "Argentine Peso",
+    "iso_code": "ARS",
+    "symbol": "$"
+  },
+  {
+    "country": "Egypt",
+    "currency_name": "Egyptian Pound",
+    "iso_code": "EGP",
+    "symbol": "£"
+  },
+  {
+    "country": "Nigeria",
+    "currency_name": "Nigerian Naira",
+    "iso_code": "NGN",
+    "symbol": "₦"
+  },
+  {
+    "country": "Kenya",
+    "currency_name": "Kenyan Shilling",
+    "iso_code": "KES",
+    "symbol": "KSh"
+  },
+  {
+    "country": "Morocco",
+    "currency_name": "Moroccan Dirham",
+    "iso_code": "MAD",
+    "symbol": "د.م."
+  },
+  {
+    "country": "Vietnam",
+    "currency_name": "Vietnamese Dong",
+    "iso_code": "VND",
+    "symbol": "₫"
+  },
+  {
+    "country": "Pakistan",
+    "currency_name": "Pakistani Rupee",
+    "iso_code": "PKR",
+    "symbol": "₨"
+  },
+  {
+    "country": "Bangladesh",
+    "currency_name": "Bangladeshi Taka",
+    "iso_code": "BDT",
+    "symbol": "৳"
+  },
+  {
+    "country": "Sri Lanka",
+    "currency_name": "Sri Lankan Rupee",
+    "iso_code": "LKR",
+    "symbol": "Rs"
+  },
+  {
+    "country": "Peru",
+    "currency_name": "Peruvian Sol",
+    "iso_code": "PEN",
+    "symbol": "S/."
+  },
+  {
+    "country": "Uruguay",
+    "currency_name": "Uruguayan Peso",
+    "iso_code": "UYU",
+    "symbol": "$U"
+  },
+  {
+    "country": "Iceland",
+    "currency_name": "Icelandic Krona",
+    "iso_code": "ISK",
+    "symbol": "kr"
+  },
+  {
+    "country": "Romania",
+    "currency_name": "Romanian Leu",
+    "iso_code": "RON",
+    "symbol": "lei"
+  },
+  {
+    "country": "Bulgaria",
+    "currency_name": "Bulgarian Lev",
+    "iso_code": "BGN",
+    "symbol": "лв"
+  },
+  {
+    "country": "Croatia",
+    "currency_name": "Croatian Kuna",
+    "iso_code": "HRK",
+    "symbol": "kn"
+  },
+  {
+    "country": "Saudi Arabia",
+    "currency_name": "Saudi Riyal",
+    "iso_code": "SAR",
+    "symbol": "﷼"
+  },
+  {
+    "country": "Qatar",
+    "currency_name": "Qatari Riyal",
+    "iso_code": "QAR",
+    "symbol": "﷼"
+  },
+  {
+    "country": "Oman",
+    "currency_name": "Omani Rial",
+    "iso_code": "OMR",
+    "symbol": "ر.ع."
+  },
+  {
+    "country": "Kuwait",
+    "currency_name": "Kuwaiti Dinar",
+    "iso_code": "KWD",
+    "symbol": "د.ك"
+  },
+  {
+    "country": "Bahrain",
+    "currency_name": "Bahraini Dinar",
+    "iso_code": "BHD",
+    "symbol": "ب.د"
+  },
+  {
+    "country": "Jordan",
+    "currency_name": "Jordanian Dinar",
+    "iso_code": "JOD",
+    "symbol": "د.ا"
+  },
+  {
+    "country": "Nepal",
+    "currency_name": "Nepalese Rupee",
+    "iso_code": "NPR",
+    "symbol": "₨"
+  },
+  {
+    "country": "Myanmar",
+    "currency_name": "Burmese Kyat",
+    "iso_code": "MMK",
+    "symbol": "Ks"
+  },
+  {
+    "country": "Cambodia",
+    "currency_name": "Cambodian Riel",
+    "iso_code": "KHR",
+    "symbol": "៛"
+  },
+  {
+    "country": "Laos",
+    "currency_name": "Lao Kip",
+    "iso_code": "LAK",
+    "symbol": "₭"
+  },
+  {
+    "country": "Taiwan",
+    "currency_name": "New Taiwan Dollar",
+    "iso_code": "TWD",
+    "symbol": "NT$"
+  },
+  {
+    "country": "Hong Kong",
+    "currency_name": "Hong Kong Dollar",
+    "iso_code": "HKD",
+    "symbol": "$"
+  },
+  {
+    "country": "Macau",
+    "currency_name": "Macanese Pataca",
+    "iso_code": "MOP",
+    "symbol": "MOP$"
+  },
+  {
+    "country": "Ukraine",
+    "currency_name": "Ukrainian Hryvnia",
+    "iso_code": "UAH",
+    "symbol": "₴"
+  },
+  {
+    "country": "Kazakhstan",
+    "currency_name": "Kazakhstani Tenge",
+    "iso_code": "KZT",
+    "symbol": "₸"
+  },
+  {
+    "country": "Uzbekistan",
+    "currency_name": "Uzbekistani Som",
+    "iso_code": "UZS",
+    "symbol": "so'm"
+  },
+  {
+    "country": "Belarus",
+    "currency_name": "Belarusian Ruble",
+    "iso_code": "BYN",
+    "symbol": "Br"
+  },
+  {
+    "country": "Albania",
+    "currency_name": "Albanian Lek",
+    "iso_code": "ALL",
+    "symbol": "L"
+  },
+  {
+    "country": "Serbia",
+    "currency_name": "Serbian Dinar",
+    "iso_code": "RSD",
+    "symbol": "дин."
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "currency_name": "Convertible Mark",
+    "iso_code": "BAM",
+    "symbol": "KM"
+  },
+  {
+    "country": "Montenegro",
+    "currency_name": "Euro (used)",
+    "iso_code": "EUR",
+    "symbol": "€"
+  },
+  {
+    "country": "Zimbabwe",
+    "currency_name": "Multiple (USD/ZAR/etc)",
+    "iso_code": "ZWL",
+    "symbol": "$"
+  }
+]

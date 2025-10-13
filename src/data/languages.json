@@ -1,0 +1,288 @@
+[
+  {
+    "code": "af",
+    "language": "Afrikaans",
+    "countries": [
+      "South Africa",
+      "Namibia"
+    ]
+  },
+  {
+    "code": "ar",
+    "language": "Arabic",
+    "countries": [
+      "Saudi Arabia",
+      "Egypt",
+      "UAE",
+      "Morocco",
+      "Yemen",
+      "Syria",
+      "Jordan",
+      "Lebanon",
+      "Iraq"
+    ]
+  },
+  {
+    "code": "bn",
+    "language": "Bengali",
+    "countries": [
+      "Bangladesh",
+      "India"
+    ]
+  },
+  {
+    "code": "zh",
+    "language": "Chinese",
+    "countries": [
+      "China",
+      "Taiwan",
+      "Singapore",
+      "Malaysia",
+      "Hong Kong"
+    ]
+  },
+  {
+    "code": "cs",
+    "language": "Czech",
+    "countries": [
+      "Czech Republic"
+    ]
+  },
+  {
+    "code": "da",
+    "language": "Danish",
+    "countries": [
+      "Denmark"
+    ]
+  },
+  {
+    "code": "nl",
+    "language": "Dutch",
+    "countries": [
+      "Netherlands",
+      "Belgium",
+      "Suriname"
+    ]
+  },
+  {
+    "code": "en",
+    "language": "English",
+    "countries": [
+      "United States",
+      "United Kingdom",
+      "Australia",
+      "Canada",
+      "New Zealand",
+      "Singapore",
+      "South Africa"
+    ]
+  },
+  {
+    "code": "fi",
+    "language": "Finnish",
+    "countries": [
+      "Finland"
+    ]
+  },
+  {
+    "code": "fr",
+    "language": "French",
+    "countries": [
+      "France",
+      "Belgium",
+      "Switzerland",
+      "Canada",
+      "Luxembourg",
+      "Monaco",
+      "Senegal",
+      "Ivory Coast",
+      "Mali"
+    ]
+  },
+  {
+    "code": "de",
+    "language": "German",
+    "countries": [
+      "Germany",
+      "Austria",
+      "Switzerland",
+      "Luxembourg",
+      "Liechtenstein"
+    ]
+  },
+  {
+    "code": "el",
+    "language": "Greek",
+    "countries": [
+      "Greece",
+      "Cyprus"
+    ]
+  },
+  {
+    "code": "he",
+    "language": "Hebrew",
+    "countries": [
+      "Israel"
+    ]
+  },
+  {
+    "code": "hi",
+    "language": "Hindi",
+    "countries": [
+      "India",
+      "Fiji"
+    ]
+  },
+  {
+    "code": "hu",
+    "language": "Hungarian",
+    "countries": [
+      "Hungary"
+    ]
+  },
+  {
+    "code": "id",
+    "language": "Indonesian",
+    "countries": [
+      "Indonesia"
+    ]
+  },
+  {
+    "code": "it",
+    "language": "Italian",
+    "countries": [
+      "Italy",
+      "Switzerland"
+    ]
+  },
+  {
+    "code": "ja",
+    "language": "Japanese",
+    "countries": [
+      "Japan"
+    ]
+  },
+  {
+    "code": "ko",
+    "language": "Korean",
+    "countries": [
+      "South Korea",
+      "North Korea"
+    ]
+  },
+  {
+    "code": "ms",
+    "language": "Malay",
+    "countries": [
+      "Malaysia",
+      "Brunei Darussalam",
+      "Singapore"
+    ]
+  },
+  {
+    "code": "fa",
+    "language": "Persian",
+    "countries": [
+      "Iran",
+      "Afghanistan",
+      "Tajikistan"
+    ]
+  },
+  {
+    "code": "pl",
+    "language": "Polish",
+    "countries": [
+      "Poland"
+    ]
+  },
+  {
+    "code": "pt",
+    "language": "Portuguese",
+    "countries": [
+      "Portugal",
+      "Brazil",
+      "Angola",
+      "Mozambique",
+      "Cape Verde"
+    ]
+  },
+  {
+    "code": "ru",
+    "language": "Russian",
+    "countries": [
+      "Russia",
+      "Belarus",
+      "Kazakhstan",
+      "Kyrgyzstan"
+    ]
+  },
+  {
+    "code": "es",
+    "language": "Spanish",
+    "countries": [
+      "Spain",
+      "Mexico",
+      "Argentina",
+      "Colombia",
+      "Chile",
+      "Peru",
+      "Venezuela",
+      "Ecuador"
+    ]
+  },
+  {
+    "code": "sv",
+    "language": "Swedish",
+    "countries": [
+      "Sweden",
+      "Finland"
+    ]
+  },
+  {
+    "code": "ta",
+    "language": "Tamil",
+    "countries": [
+      "India",
+      "Sri Lanka",
+      "Singapore",
+      "Malaysia"
+    ]
+  },
+  {
+    "code": "th",
+    "language": "Thai",
+    "countries": [
+      "Thailand"
+    ]
+  },
+  {
+    "code": "tr",
+    "language": "Turkish",
+    "countries": [
+      "Turkey",
+      "Cyprus"
+    ]
+  },
+  {
+    "code": "uk",
+    "language": "Ukrainian",
+    "countries": [
+      "Ukraine"
+    ]
+  },
+  {
+    "code": "ur",
+    "language": "Urdu",
+    "countries": [
+      "Pakistan",
+      "India"
+    ]
+  },
+  {
+    "code": "vi",
+    "language": "Vietnamese",
+    "countries": [
+      "Vietnam"
+    ]
+  }
+]
