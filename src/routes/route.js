@@ -10,6 +10,9 @@ const villageController = require("../controllers/village-controller");
 const schemeTagController = require("../controllers/scheme-tag-controller");
 const standardController = require("../controllers/standard-controller");
 const employmentLevelController = require("../controllers/employment-level-controller");
+const contractCategoryController = require("../controllers/contract-category-controller");
+const contractSubcategoryController = require("../controllers/contract-subcategory-controller");
+const contractVariantController = require("../controllers/contract-variant-controller");
 const authMiddleware = require("../middleware/auth-middleware");
 const mainRoutes = express.Router();
 
@@ -100,5 +103,29 @@ mainRoutes.get("/employment-level/:id", authMiddleware, employmentLevelControlle
 mainRoutes.put("/employment-level/:id", authMiddleware, employmentLevelController.update);
 mainRoutes.delete("/employment-level/:id", authMiddleware, employmentLevelController.destroy);
 mainRoutes.delete("/employment-level", authMiddleware, employmentLevelController.destroyMany);
+
+// Contract Category
+mainRoutes.get("/contract-categories", authMiddleware, contractCategoryController.getAll);
+mainRoutes.post("/contract-categories", authMiddleware, contractCategoryController.create);
+mainRoutes.get("/contract-categories/:id", authMiddleware, contractCategoryController.getOne);
+mainRoutes.put("/contract-categories/:id", authMiddleware, contractCategoryController.update);
+mainRoutes.delete("/contract-categories/:id", authMiddleware, contractCategoryController.destroy);
+mainRoutes.delete("/contract-categories", authMiddleware, contractCategoryController.destroyMany);
+
+// Contract Subcategory
+mainRoutes.get("/contract-subcategories", authMiddleware, contractSubcategoryController.getAll);
+mainRoutes.post("/contract-subcategories", authMiddleware, contractSubcategoryController.create);
+mainRoutes.get("/contract-subcategories/:id", authMiddleware, contractSubcategoryController.getOne);
+mainRoutes.put("/contract-subcategories/:id", authMiddleware, contractSubcategoryController.update);
+mainRoutes.delete("/contract-subcategories/:id", authMiddleware, contractSubcategoryController.destroy);
+mainRoutes.delete("/contract-subcategories", authMiddleware, contractSubcategoryController.destroyMany);
+
+// Contract Variant
+mainRoutes.get("/contract-variants", authMiddleware, contractVariantController.getAll);
+mainRoutes.post("/contract-variants", authMiddleware, contractVariantController.create);
+mainRoutes.get("/contract-variants/:id", authMiddleware, contractVariantController.getOne);
+mainRoutes.put("/contract-variants/:id", authMiddleware, contractVariantController.update);
+mainRoutes.delete("/contract-variants/:id", authMiddleware, contractVariantController.destroy);
+mainRoutes.delete("/contract-variants", authMiddleware, contractVariantController.destroyMany);
 
 module.exports = mainRoutes;

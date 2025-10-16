@@ -2,7 +2,7 @@ const model = require("../models/index");
 const modelAdministrative = require("../models/administrative/index");
 const { ResponseError } = require("../errors/response-error");
 const jwt = require("jsonwebtoken");
-const { Op } = require("sequelize");
+const { Op, where } = require("sequelize");
 const CryptoJS = require("crypto-js");
 require("dotenv");
 
@@ -130,6 +130,15 @@ function checkStatus(statuses, status, key = null) {
     );
 }
 
+async function generateContractVariantCode(contractSubcategoryId) {
+  const lastVariant = await model.ContractVariant.findOne({
+    where: { contractSubcategoryId },
+    order: [["code", "DESC"]],
+  });
+
+  return lastVariant ? parseInt(lastVariant.code) + 1 : 1;
+}
+
 module.exports = {
   generateToken,
   generateRefreshToken,
@@ -143,4 +152,5 @@ module.exports = {
   encryptData,
   decryptData,
   checkStatus,
+  generateContractVariantCode,
 };
