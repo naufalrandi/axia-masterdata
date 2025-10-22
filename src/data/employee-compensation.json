@@ -1,0 +1,107 @@
+[
+  {
+    "type": "Benefit",
+    "label": "Housing",
+    "scheme": "Fixed cost",
+    "unit": "per month",
+    "method": "Cash advance"
+  },
+  {
+    "type": "Allowance",
+    "label": "Meal",
+    "scheme": "Fixed cost",
+    "unit": "per month",
+    "method": "Cash advance"
+  },
+  {
+    "type": "Allowance",
+    "label": "Religious (THR)",
+    "scheme": "Fixed cost",
+    "unit": "per year",
+    "method": "Cash advance"
+  },
+  {
+    "type": "Allowance",
+    "label": "Telecommunication",
+    "scheme": "Fixed cost",
+    "unit": "per month",
+    "method": "Cash advance"
+  },
+  {
+    "type": "Allowance",
+    "label": "Transportation",
+    "scheme": "Fixed cost",
+    "unit": "per month",
+    "method": "Cash advance"
+  },
+  {
+    "type": "Benefit",
+    "label": "Travel",
+    "scheme": "Limit-based",
+    "unit": "per month",
+    "method": "Reimbursement"
+  },
+  {
+    "type": "Benefit",
+    "label": "Dental Care",
+    "scheme": "Limit-based",
+    "unit": "per month",
+    "method": "Reimbursement"
+  },
+  {
+    "type": "Benefit",
+    "label": "Education",
+    "scheme": "Limit-based",
+    "unit": "per year",
+    "method": "Reimbursement"
+  },
+  {
+    "type": "Benefit",
+    "label": "Health Insurance - In-patient",
+    "scheme": "Fixed cost",
+    "unit": "per month",
+    "method": "Direct payment to provider"
+  },
+  {
+    "type": "Benefit",
+    "label": "Health Insurance - Out-patient",
+    "scheme": "Fixed cost",
+    "unit": "per month",
+    "method": "Direct payment to provider"
+  },
+  {
+    "type": "Benefit",
+    "label": "Life Insurance",
+    "scheme": "Fixed cost",
+    "unit": "per year",
+    "method": "Direct payment to provider"
+  },
+  {
+    "type": "Benefit",
+    "label": "Medical Treatment",
+    "scheme": "Limit-based",
+    "unit": "per month",
+    "method": "Reimbursement"
+  },
+  {
+    "type": "Benefit",
+    "label": "Professional Development",
+    "scheme": "Limit-based",
+    "unit": "per case",
+    "method": "Reimbursement"
+  },
+  {
+    "type": "Benefit",
+    "label": "Wellness",
+    "scheme": "Limit-based",
+    "unit": "per month",
+    "method": "Reimbursement"
+  },
+  {
+    "type": "Allowance",
+    "label": "Accomodation",
+    "scheme": "Actual cost",
+    "unit": "per day",
+    "method": "Reimbursement"
+  }
+]

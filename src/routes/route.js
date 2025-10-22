@@ -13,6 +13,8 @@ const employmentLevelController = require("../controllers/employment-level-contr
 const contractCategoryController = require("../controllers/contract-category-controller");
 const contractSubcategoryController = require("../controllers/contract-subcategory-controller");
 const contractVariantController = require("../controllers/contract-variant-controller");
+const bpjsEmploymentController = require("../controllers/bpjs-employment-controller");
+const employeeCompensationController = require("../controllers/employee-compensation-controller");
 const authMiddleware = require("../middleware/auth-middleware");
 const mainRoutes = express.Router();
 
@@ -127,5 +129,21 @@ mainRoutes.get("/contract-variants/:id", authMiddleware, contractVariantControll
 mainRoutes.put("/contract-variants/:id", authMiddleware, contractVariantController.update);
 mainRoutes.delete("/contract-variants/:id", authMiddleware, contractVariantController.destroy);
 mainRoutes.delete("/contract-variants", authMiddleware, contractVariantController.destroyMany);
+
+// BPJS Employment
+mainRoutes.get("/bpjs-employment", authMiddleware, bpjsEmploymentController.getAll);
+mainRoutes.post("/bpjs-employment", authMiddleware, bpjsEmploymentController.create);
+mainRoutes.get("/bpjs-employment/:id", authMiddleware, bpjsEmploymentController.getOne);
+mainRoutes.put("/bpjs-employment/:id", authMiddleware, bpjsEmploymentController.update);
+mainRoutes.delete("/bpjs-employment/:id", authMiddleware, bpjsEmploymentController.destroy);
+mainRoutes.delete("/bpjs-employment", authMiddleware, bpjsEmploymentController.destroyMany);
+
+// Employee Compensation
+mainRoutes.get("/employee-compensations", authMiddleware, employeeCompensationController.getAll);
+mainRoutes.post("/employee-compensations", authMiddleware, employeeCompensationController.create);
+mainRoutes.get("/employee-compensations/:id", authMiddleware, employeeCompensationController.getOne);
+mainRoutes.put("/employee-compensations/:id", authMiddleware, employeeCompensationController.update);
+mainRoutes.delete("/employee-compensations/:id", authMiddleware, employeeCompensationController.destroy);
+mainRoutes.delete("/employee-compensations", authMiddleware, employeeCompensationController.destroyMany);
 
 module.exports = mainRoutes;

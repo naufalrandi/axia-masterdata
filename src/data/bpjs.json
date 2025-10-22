@@ -1,0 +1,26 @@
+[
+  {
+    "short_name": "JKK",
+    "name": "Jaminan Kecelakaan Kerja",
+    "percentageOfCompany": 0.24,
+    "percentageOfEmployee": 0
+  },
+  {
+    "short_name": "JKM",
+    "name": "Jaminan Kematian",
+    "percentageOfCompany": 0.3,
+    "percentageOfEmployee": 0
+  },
+  {
+    "short_name": "JHT",
+    "name": "Jaminan Hari Tua",
+    "percentageOfCompany": 3.7,
+    "percentageOfEmployee": 2
+  },
+  {
+    "short_name": "JP",
+    "name": "Jaminan Pensiun",
+    "percentageOfCompany": 3,
+    "percentageOfEmployee": 1
+  }
+]
