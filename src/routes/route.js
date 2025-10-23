@@ -15,6 +15,10 @@ const contractSubcategoryController = require("../controllers/contract-subcatego
 const contractVariantController = require("../controllers/contract-variant-controller");
 const bpjsEmploymentController = require("../controllers/bpjs-employment-controller");
 const employeeCompensationController = require("../controllers/employee-compensation-controller");
+const auditTypeController = require("../controllers/audit-type-controller");
+const auditPeriodController = require("../controllers/audit-period-controller");
+const auditRoleController = require("../controllers/audit-role-controller");
+const consultantRoleController = require("../controllers/consultant-role-controller");
 const authMiddleware = require("../middleware/auth-middleware");
 const mainRoutes = express.Router();
 
@@ -139,11 +143,43 @@ mainRoutes.delete("/bpjs-employment/:id", authMiddleware, bpjsEmploymentControll
 mainRoutes.delete("/bpjs-employment", authMiddleware, bpjsEmploymentController.destroyMany);
 
 // Employee Compensation
-mainRoutes.get("/employee-compensations", authMiddleware, employeeCompensationController.getAll);
-mainRoutes.post("/employee-compensations", authMiddleware, employeeCompensationController.create);
-mainRoutes.get("/employee-compensations/:id", authMiddleware, employeeCompensationController.getOne);
-mainRoutes.put("/employee-compensations/:id", authMiddleware, employeeCompensationController.update);
-mainRoutes.delete("/employee-compensations/:id", authMiddleware, employeeCompensationController.destroy);
-mainRoutes.delete("/employee-compensations", authMiddleware, employeeCompensationController.destroyMany);
+mainRoutes.get("/employee-compensation", authMiddleware, employeeCompensationController.getAll);
+mainRoutes.post("/employee-compensation", authMiddleware, employeeCompensationController.create);
+mainRoutes.get("/employee-compensation/:id", authMiddleware, employeeCompensationController.getOne);
+mainRoutes.put("/employee-compensation/:id", authMiddleware, employeeCompensationController.update);
+mainRoutes.delete("/employee-compensation/:id", authMiddleware, employeeCompensationController.destroy);
+mainRoutes.delete("/employee-compensation", authMiddleware, employeeCompensationController.destroyMany);
+
+// Audit Type
+mainRoutes.get("/audit-types", authMiddleware, auditTypeController.getAll);
+mainRoutes.post("/audit-types", authMiddleware, auditTypeController.create);
+mainRoutes.get("/audit-types/:id", authMiddleware, auditTypeController.getOne);
+mainRoutes.put("/audit-types/:id", authMiddleware, auditTypeController.update);
+mainRoutes.delete("/audit-types/:id", authMiddleware, auditTypeController.destroy);
+mainRoutes.delete("/audit-types", authMiddleware, auditTypeController.destroyMany);
+
+// Audit Period
+mainRoutes.get("/audit-periods", authMiddleware, auditPeriodController.getAll);
+mainRoutes.post("/audit-periods", authMiddleware, auditPeriodController.create);
+mainRoutes.get("/audit-periods/:id", authMiddleware, auditPeriodController.getOne);
+mainRoutes.put("/audit-periods/:id", authMiddleware, auditPeriodController.update);
+mainRoutes.delete("/audit-periods/:id", authMiddleware, auditPeriodController.destroy);
+mainRoutes.delete("/audit-periods", authMiddleware, auditPeriodController.destroyMany);
+
+// Audit Role
+mainRoutes.get("/audit-roles", authMiddleware, auditRoleController.getAll);
+mainRoutes.post("/audit-roles", authMiddleware, auditRoleController.create);
+mainRoutes.get("/audit-roles/:id", authMiddleware, auditRoleController.getOne);
+mainRoutes.put("/audit-roles/:id", authMiddleware, auditRoleController.update);
+mainRoutes.delete("/audit-roles/:id", authMiddleware, auditRoleController.destroy);
+mainRoutes.delete("/audit-roles", authMiddleware, auditRoleController.destroyMany);
+
+// Consultant Role
+mainRoutes.get("/consultant-roles", authMiddleware, consultantRoleController.getAll);
+mainRoutes.post("/consultant-roles", authMiddleware, consultantRoleController.create);
+mainRoutes.get("/consultant-roles/:id", authMiddleware, consultantRoleController.getOne);
+mainRoutes.put("/consultant-roles/:id", authMiddleware, consultantRoleController.update);
+mainRoutes.delete("/consultant-roles/:id", authMiddleware, consultantRoleController.destroy);
+mainRoutes.delete("/consultant-roles", authMiddleware, consultantRoleController.destroyMany);
 
 module.exports = mainRoutes;
