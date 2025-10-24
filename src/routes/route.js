@@ -19,6 +19,8 @@ const auditTypeController = require("../controllers/audit-type-controller");
 const auditPeriodController = require("../controllers/audit-period-controller");
 const auditRoleController = require("../controllers/audit-role-controller");
 const consultantRoleController = require("../controllers/consultant-role-controller");
+const legalEntityTypeController = require("../controllers/legal-entity-type-controller");
+const iafCodeController = require("../controllers/iaf-code-controller");
 const authMiddleware = require("../middleware/auth-middleware");
 const mainRoutes = express.Router();
 
@@ -181,5 +183,21 @@ mainRoutes.get("/consultant-roles/:id", authMiddleware, consultantRoleController
 mainRoutes.put("/consultant-roles/:id", authMiddleware, consultantRoleController.update);
 mainRoutes.delete("/consultant-roles/:id", authMiddleware, consultantRoleController.destroy);
 mainRoutes.delete("/consultant-roles", authMiddleware, consultantRoleController.destroyMany);
+
+// Legal Entity Type
+mainRoutes.get("/legal-entity-types", authMiddleware, legalEntityTypeController.getAll);
+mainRoutes.post("/legal-entity-types", authMiddleware, legalEntityTypeController.create);
+mainRoutes.get("/legal-entity-types/:id", authMiddleware, legalEntityTypeController.getOne);
+mainRoutes.put("/legal-entity-types/:id", authMiddleware, legalEntityTypeController.update);
+mainRoutes.delete("/legal-entity-types/:id", authMiddleware, legalEntityTypeController.destroy);
+mainRoutes.delete("/legal-entity-types", authMiddleware, legalEntityTypeController.destroyMany);
+
+// IAF Code
+mainRoutes.get("/iaf-codes", authMiddleware, iafCodeController.getAll);
+mainRoutes.post("/iaf-codes", authMiddleware, iafCodeController.create);
+mainRoutes.get("/iaf-codes/:id", authMiddleware, iafCodeController.getOne);
+mainRoutes.put("/iaf-codes/:id", authMiddleware, iafCodeController.update);
+mainRoutes.delete("/iaf-codes/:id", authMiddleware, iafCodeController.destroy);
+mainRoutes.delete("/iaf-codes", authMiddleware, iafCodeController.destroyMany);
 
 module.exports = mainRoutes;
