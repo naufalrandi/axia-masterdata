@@ -21,6 +21,7 @@ const auditRoleController = require("../controllers/audit-role-controller");
 const consultantRoleController = require("../controllers/consultant-role-controller");
 const legalEntityTypeController = require("../controllers/legal-entity-type-controller");
 const iafCodeController = require("../controllers/iaf-code-controller");
+const processFunctionController = require("../controllers/process-function-controller");
 const authMiddleware = require("../middleware/auth-middleware");
 const mainRoutes = express.Router();
 
@@ -199,5 +200,13 @@ mainRoutes.get("/iaf-codes/:id", authMiddleware, iafCodeController.getOne);
 mainRoutes.put("/iaf-codes/:id", authMiddleware, iafCodeController.update);
 mainRoutes.delete("/iaf-codes/:id", authMiddleware, iafCodeController.destroy);
 mainRoutes.delete("/iaf-codes", authMiddleware, iafCodeController.destroyMany);
+
+// Process Function
+mainRoutes.get("/process-functions", authMiddleware, processFunctionController.getAll);
+mainRoutes.post("/process-functions", authMiddleware, processFunctionController.create);
+mainRoutes.get("/process-functions/:id", authMiddleware, processFunctionController.getOne);
+mainRoutes.put("/process-functions/:id", authMiddleware, processFunctionController.update);
+mainRoutes.delete("/process-functions/:id", authMiddleware, processFunctionController.destroy);
+mainRoutes.delete("/process-functions", authMiddleware, processFunctionController.destroyMany);
 
 module.exports = mainRoutes;
