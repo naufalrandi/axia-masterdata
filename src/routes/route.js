@@ -22,6 +22,9 @@ const consultantRoleController = require("../controllers/consultant-role-control
 const legalEntityTypeController = require("../controllers/legal-entity-type-controller");
 const iafCodeController = require("../controllers/iaf-code-controller");
 const processFunctionController = require("../controllers/process-function-controller");
+const serviceController = require("../controllers/service-controller");
+const consultancyMethodController = require("../controllers/consultancy-method-controller");
+const trainingCourseController = require("../controllers/training-course-controller");
 const authMiddleware = require("../middleware/auth-middleware");
 const mainRoutes = express.Router();
 
@@ -208,5 +211,29 @@ mainRoutes.get("/process-functions/:id", authMiddleware, processFunctionControll
 mainRoutes.put("/process-functions/:id", authMiddleware, processFunctionController.update);
 mainRoutes.delete("/process-functions/:id", authMiddleware, processFunctionController.destroy);
 mainRoutes.delete("/process-functions", authMiddleware, processFunctionController.destroyMany);
+
+// Service
+mainRoutes.get("/services", authMiddleware, serviceController.getAll);
+mainRoutes.post("/services", authMiddleware, serviceController.create);
+mainRoutes.get("/services/:id", authMiddleware, serviceController.getOne);
+mainRoutes.put("/services/:id", authMiddleware, serviceController.update);
+mainRoutes.delete("/services/:id", authMiddleware, serviceController.destroy);
+mainRoutes.delete("/services", authMiddleware, serviceController.destroyMany);
+
+// Consultancy Method
+mainRoutes.get("/consultancy-methods", authMiddleware, consultancyMethodController.getAll);
+mainRoutes.post("/consultancy-methods", authMiddleware, consultancyMethodController.create);
+mainRoutes.get("/consultancy-methods/:id", authMiddleware, consultancyMethodController.getOne);
+mainRoutes.put("/consultancy-methods/:id", authMiddleware, consultancyMethodController.update);
+mainRoutes.delete("/consultancy-methods/:id", authMiddleware, consultancyMethodController.destroy);
+mainRoutes.delete("/consultancy-methods", authMiddleware, consultancyMethodController.destroyMany);
+
+// Training Course
+mainRoutes.get("/training-courses", authMiddleware, trainingCourseController.getAll);
+mainRoutes.post("/training-courses", authMiddleware, trainingCourseController.create);
+mainRoutes.get("/training-courses/:id", authMiddleware, trainingCourseController.getOne);
+mainRoutes.put("/training-courses/:id", authMiddleware, trainingCourseController.update);
+mainRoutes.delete("/training-courses/:id", authMiddleware, trainingCourseController.destroy);
+mainRoutes.delete("/training-courses", authMiddleware, trainingCourseController.destroyMany);
 
 module.exports = mainRoutes;

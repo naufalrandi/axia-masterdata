@@ -139,6 +139,27 @@ async function generateContractVariantCode(contractSubcategoryId) {
   return lastVariant ? parseInt(lastVariant.code) + 1 : 1;
 }
 
+async function generateTrainingCourseCode(transaction = null) {
+  const course = await model.TrainingCourse.findOne({
+    where: {
+      runningNumber: {
+        [Op.not]: null,
+      },
+    },
+    attributes: ["runningNumber"],
+    order: [["runningNumber", "DESC"]],
+    transaction,
+  });
+
+  const runNum = course ? course.runningNumber + 1 : 1;
+  const formattedRunNum = String(runNum).padStart(2, "0");
+
+  return {
+    runningNumber: runNum,
+    code: `72${formattedRunNum}`,
+  };
+}
+
 module.exports = {
   generateToken,
   generateRefreshToken,
@@ -153,4 +174,6 @@ module.exports = {
   decryptData,
   checkStatus,
   generateContractVariantCode,
+  generateContractVariantCode,
+  generateTrainingCourseCode,
 };
