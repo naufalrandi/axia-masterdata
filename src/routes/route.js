@@ -9,6 +9,7 @@ const districtController = require("../controllers/district-controller");
 const villageController = require("../controllers/village-controller");
 const schemeTagController = require("../controllers/scheme-tag-controller");
 const standardController = require("../controllers/standard-controller");
+const standardClauseController = require("../controllers/standard-clause-controller");
 const employmentLevelController = require("../controllers/employment-level-controller");
 const contractCategoryController = require("../controllers/contract-category-controller");
 const contractSubcategoryController = require("../controllers/contract-subcategory-controller");
@@ -55,41 +56,41 @@ mainRoutes.delete("/currencies", authMiddleware, currencyController.destroyMany)
 // Country
 mainRoutes.get("/countries", authMiddleware, countryController.getAll);
 mainRoutes.post("/countries", authMiddleware, countryController.create);
-mainRoutes.get("/countries/:slug", authMiddleware, countryController.getOne);
-mainRoutes.put("/countries/:slug", authMiddleware, countryController.update);
-mainRoutes.delete("/countries/:slug", authMiddleware, countryController.destroy);
+mainRoutes.get("/countries/:id", authMiddleware, countryController.getOne);
+mainRoutes.put("/countries/:id", authMiddleware, countryController.update);
+mainRoutes.delete("/countries/:id", authMiddleware, countryController.destroy);
 mainRoutes.delete("/countries", authMiddleware, countryController.destroyMany);
 
 // Province
 mainRoutes.get("/provinces", authMiddleware, provinceController.getAll);
 mainRoutes.post("/provinces", authMiddleware, provinceController.create);
-mainRoutes.get("/provinces/:slug", authMiddleware, provinceController.getOne);
-mainRoutes.put("/provinces/:slug", authMiddleware, provinceController.update);
-mainRoutes.delete("/provinces/:slug", authMiddleware, provinceController.destroy);
+mainRoutes.get("/provinces/:id", authMiddleware, provinceController.getOne);
+mainRoutes.put("/provinces/:id", authMiddleware, provinceController.update);
+mainRoutes.delete("/provinces/:id", authMiddleware, provinceController.destroy);
 mainRoutes.delete("/provinces", authMiddleware, provinceController.destroyMany);
 
 // City
 mainRoutes.get("/cities", authMiddleware, cityController.getAll);
 mainRoutes.post("/cities", authMiddleware, cityController.create);
-mainRoutes.get("/cities/:slug", authMiddleware, cityController.getOne);
-mainRoutes.put("/cities/:slug", authMiddleware, cityController.update);
-mainRoutes.delete("/cities/:slug", authMiddleware, cityController.destroy);
+mainRoutes.get("/cities/:id", authMiddleware, cityController.getOne);
+mainRoutes.put("/cities/:id", authMiddleware, cityController.update);
+mainRoutes.delete("/cities/:id", authMiddleware, cityController.destroy);
 mainRoutes.delete("/cities", authMiddleware, cityController.destroyMany);
 
 // District
 mainRoutes.get("/districts", authMiddleware, districtController.getAll);
 mainRoutes.post("/districts", authMiddleware, districtController.create);
-mainRoutes.get("/districts/:slug", authMiddleware, districtController.getOne);
-mainRoutes.put("/districts/:slug", authMiddleware, districtController.update);
-mainRoutes.delete("/districts/:slug", authMiddleware, districtController.destroy);
+mainRoutes.get("/districts/:id", authMiddleware, districtController.getOne);
+mainRoutes.put("/districts/:id", authMiddleware, districtController.update);
+mainRoutes.delete("/districts/:id", authMiddleware, districtController.destroy);
 mainRoutes.delete("/districts", authMiddleware, districtController.destroyMany);
 
 // Village
 mainRoutes.get("/villages", authMiddleware, villageController.getAll);
 mainRoutes.post("/villages", authMiddleware, villageController.create);
-mainRoutes.get("/villages/:slug", authMiddleware, villageController.getOne);
-mainRoutes.put("/villages/:slug", authMiddleware, villageController.update);
-mainRoutes.delete("/villages/:slug", authMiddleware, villageController.destroy);
+mainRoutes.get("/villages/:id", authMiddleware, villageController.getOne);
+mainRoutes.put("/villages/:id", authMiddleware, villageController.update);
+mainRoutes.delete("/villages/:id", authMiddleware, villageController.destroy);
 mainRoutes.delete("/villages", authMiddleware, villageController.destroyMany);
 
 // Scheme Tag
@@ -107,6 +108,14 @@ mainRoutes.get("/standards/:id", authMiddleware, standardController.getOne);
 mainRoutes.put("/standards/:id", authMiddleware, standardController.update);
 mainRoutes.delete("/standards/:id", authMiddleware, standardController.destroy);
 mainRoutes.delete("/standards", authMiddleware, standardController.destroyMany);
+
+// Standard Clause
+mainRoutes.get("/standard-clauses", authMiddleware, standardClauseController.getAll);
+mainRoutes.post("/standard-clauses", authMiddleware, standardClauseController.createMany);
+mainRoutes.get("/standard-clauses/:id", authMiddleware, standardClauseController.getOne);
+mainRoutes.put("/standard-clauses/:id", authMiddleware, standardClauseController.update);
+mainRoutes.delete("/standard-clauses/:id", authMiddleware, standardClauseController.destroy);
+mainRoutes.delete("/standard-clauses", authMiddleware, standardClauseController.destroyMany);
 
 // Employment Level
 mainRoutes.get("/employment-level", authMiddleware, employmentLevelController.getAll);

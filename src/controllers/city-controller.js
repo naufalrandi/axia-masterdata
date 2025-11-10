@@ -30,7 +30,7 @@ const create = async (req, res, next) => {
 
 const getOne = async (req, res, next) => {
   try {
-    const result = await cityService.getOne(req.params.slug);
+    const result = await cityService.getOne(req.params.id);
     res.status(200).json({
       success: true,
       data: result,
@@ -43,7 +43,7 @@ const getOne = async (req, res, next) => {
 const update = async (req, res, next) => {
   try {
     const data = req.body;
-    const result = await cityService.update(req.params.slug, data);
+    const result = await cityService.update(req.params.id, data);
 
     res.status(200).json({
       success: true,
@@ -56,7 +56,7 @@ const update = async (req, res, next) => {
 
 const destroy = async (req, res, next) => {
   try {
-    const result = await cityService.destroy(req.params.slug);
+    const result = await cityService.destroy(req.params.id);
     res.status(200).json({
       success: true,
       data: result,

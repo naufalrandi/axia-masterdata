@@ -1,10 +1,10 @@
 const { paginationData } = require("../helpers/func");
-const villageService = require("../services/village-service");
+const standardClauseService = require("../services/standard-clause-service");
 
 const getAll = async (req, res, next) => {
   try {
     const data = paginationData(req.query);
-    const result = await villageService.getAll(data);
+    const result = await standardClauseService.getAll(data);
 
     res.status(200).json({
       success: true,
@@ -15,10 +15,10 @@ const getAll = async (req, res, next) => {
   }
 };
 
-const create = async (req, res, next) => {
+const createMany = async (req, res, next) => {
   try {
     const data = req.body;
-    const result = await villageService.create(data);
+    const result = await standardClauseService.createMany(data);
     res.status(200).json({
       success: true,
       data: result,
@@ -30,7 +30,7 @@ const create = async (req, res, next) => {
 
 const getOne = async (req, res, next) => {
   try {
-    const result = await villageService.getOne(req.params.id);
+    const result = await standardClauseService.getOne(req.params.id);
     res.status(200).json({
       success: true,
       data: result,
@@ -43,7 +43,7 @@ const getOne = async (req, res, next) => {
 const update = async (req, res, next) => {
   try {
     const data = req.body;
-    const result = await villageService.update(req.params.id, data);
+    const result = await standardClauseService.update(req.params.id, data);
 
     res.status(200).json({
       success: true,
@@ -56,7 +56,7 @@ const update = async (req, res, next) => {
 
 const destroy = async (req, res, next) => {
   try {
-    const result = await villageService.destroy(req.params.id);
+    const result = await standardClauseService.destroy(req.params.id);
     res.status(200).json({
       success: true,
       data: result,
@@ -68,7 +68,7 @@ const destroy = async (req, res, next) => {
 
 const destroyMany = async (req, res, next) => {
   try {
-    const result = await villageService.destroyMany(req.body);
+    const result = await standardClauseService.destroyMany(req.body);
     res.status(200).json({
       success: true,
       data: result,
@@ -80,7 +80,7 @@ const destroyMany = async (req, res, next) => {
 
 module.exports = {
   getAll,
-  create,
+  createMany,
   getOne,
   update,
   destroy,

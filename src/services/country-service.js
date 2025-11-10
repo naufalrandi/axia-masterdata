@@ -9,9 +9,9 @@ const {
   updateCountryManyValidation,
 } = require("../validations/country-validation");
 
-const getData = async (slug) => {
+const getData = async (id) => {
   const result = await model.Country.findOne({
-    where: { slug },
+    where: { id },
     include: [
       {
         model: model.Language,
@@ -77,19 +77,19 @@ const create = async (data) => {
   return "Created successfully";
 };
 
-const getOne = async (slug) => {
-  return await getData(slug);
+const getOne = async (id) => {
+  return await getData(id);
 };
 
-const update = async (slug, data) => {
-  data.slug = slug;
+const update = async (id, data) => {
+  data.id = id;
   data = validate(updateCountryValidation, data);
   const languageIds = data.languages.map((item) => item.id);
   const currencyIds = data.currencies.map((item) => item.id);
   delete data.languages;
   delete data.currencies;
 
-  const country = await model.Country.findOne({ where: { slug: data.slug } });
+  const country = await model.Country.findOne({ where: { id: data.id } });
   if (!country) throw new ResponseError(404, "Country not found");
 
   if (data.name && data.name !== country.name) {
@@ -120,10 +120,10 @@ const update = async (slug, data) => {
   return "Updated successfully";
 };
 
-const destroy = async (slug) => {
-  await getData(slug);
+const destroy = async (id) => {
+  await getData(id);
   return await model.Country.destroy({
-    where: { slug },
+    where: { id },
   });
 };
 

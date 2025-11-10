@@ -14,9 +14,9 @@ const {
   updateVillageManyValidation,
 } = require("../validations/village-validation");
 
-const getData = async (slug) => {
+const getData = async (id) => {
   const result = await model.Village.findOne({
-    where: { slug },
+    where: { id },
     include: ["district"],
   });
 
@@ -59,30 +59,30 @@ const create = async (data) => {
   return await model.Village.create(data);
 };
 
-const getOne = async (slug) => {
-  return await getData(slug);
+const getOne = async (id) => {
+  return await getData(id);
 };
 
-const update = async (slug, data) => {
-  data.slug = slug;
+const update = async (id, data) => {
+  data.id = id;
   data = validate(updateVillageValidation, data);
 
   const check = await checkData({
     name: data.name,
-    slug: {
-      [Op.ne]: slug,
+    id: {
+      [Op.ne]: id,
     },
   });
 
   data.slug = generateSlug(data.name);
   if (check) throw new ResponseError(400, "Village already exists");
-  return await model.Village.update(data, { where: { slug } });
+  return await model.Village.update(data, { where: { id } });
 };
 
-const destroy = async (slug) => {
-  await getData(slug);
+const destroy = async (id) => {
+  await getData(id);
   return await model.Village.destroy({
-    where: { slug },
+    where: { id },
   });
 };
 

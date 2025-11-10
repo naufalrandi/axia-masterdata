@@ -12,6 +12,18 @@ const {
 const getData = async (id) => {
   const result = await model.Standard.findOne({
     where: { id },
+    include: [
+      {
+        model: model.SchemeTag,
+        as: "schemeTag",
+        attributes: { exclude: ["createdAt", "updatedAt"] },
+      },
+      {
+        model: model.StandardClause,
+        as: "standardClauses",
+        attributes: { exclude: ["createdAt", "updatedAt"] },
+      },
+    ],
   });
 
   if (!result) throw new ResponseError(404, "Data not found");
