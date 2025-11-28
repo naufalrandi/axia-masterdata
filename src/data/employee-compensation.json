@@ -1,6 +1,6 @@
 [
   {
-    "type": "Benefit",
+    "type": "Allowance",
     "label": "Housing",
     "scheme": "Fixed cost",
     "unit": "per month",
@@ -39,6 +39,13 @@
     "label": "Travel",
     "scheme": "Limit-based",
     "unit": "per month",
+    "method": "Reimbursement"
+  },
+  {
+    "type": "Allowance",
+    "label": "Travel",
+    "scheme": "Actual cost",
+    "unit": "per day",
     "method": "Reimbursement"
   },
   {

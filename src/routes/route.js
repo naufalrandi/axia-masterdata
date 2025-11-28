@@ -26,6 +26,7 @@ const processFunctionController = require("../controllers/process-function-contr
 const serviceController = require("../controllers/service-controller");
 const consultancyMethodController = require("../controllers/consultancy-method-controller");
 const trainingCourseController = require("../controllers/training-course-controller");
+const consultancyProgramController = require("../controllers/consultancy-program-controller");
 const authMiddleware = require("../middleware/auth-middleware");
 const mainRoutes = express.Router();
 
@@ -158,12 +159,12 @@ mainRoutes.delete("/bpjs-employment/:id", authMiddleware, bpjsEmploymentControll
 mainRoutes.delete("/bpjs-employment", authMiddleware, bpjsEmploymentController.destroyMany);
 
 // Employee Compensation
-mainRoutes.get("/employee-compensation", authMiddleware, employeeCompensationController.getAll);
-mainRoutes.post("/employee-compensation", authMiddleware, employeeCompensationController.create);
-mainRoutes.get("/employee-compensation/:id", authMiddleware, employeeCompensationController.getOne);
-mainRoutes.put("/employee-compensation/:id", authMiddleware, employeeCompensationController.update);
-mainRoutes.delete("/employee-compensation/:id", authMiddleware, employeeCompensationController.destroy);
-mainRoutes.delete("/employee-compensation", authMiddleware, employeeCompensationController.destroyMany);
+mainRoutes.get("/employee-compensations", authMiddleware, employeeCompensationController.getAll);
+mainRoutes.post("/employee-compensations", authMiddleware, employeeCompensationController.create);
+mainRoutes.get("/employee-compensations/:id", authMiddleware, employeeCompensationController.getOne);
+mainRoutes.put("/employee-compensations/:id", authMiddleware, employeeCompensationController.update);
+mainRoutes.delete("/employee-compensations/:id", authMiddleware, employeeCompensationController.destroy);
+mainRoutes.delete("/employee-compensations", authMiddleware, employeeCompensationController.destroyMany);
 
 // Audit Type
 mainRoutes.get("/audit-types", authMiddleware, auditTypeController.getAll);
@@ -244,5 +245,13 @@ mainRoutes.get("/training-courses/:id", authMiddleware, trainingCourseController
 mainRoutes.put("/training-courses/:id", authMiddleware, trainingCourseController.update);
 mainRoutes.delete("/training-courses/:id", authMiddleware, trainingCourseController.destroy);
 mainRoutes.delete("/training-courses", authMiddleware, trainingCourseController.destroyMany);
+
+// Consultancy Program
+mainRoutes.get("/consultancy-programs", authMiddleware, consultancyProgramController.getAll);
+mainRoutes.post("/consultancy-programs", authMiddleware, consultancyProgramController.create);
+mainRoutes.get("/consultancy-programs/:id", authMiddleware, consultancyProgramController.getOne);
+mainRoutes.put("/consultancy-programs/:id", authMiddleware, consultancyProgramController.update);
+mainRoutes.delete("/consultancy-programs/:id", authMiddleware, consultancyProgramController.destroy);
+mainRoutes.delete("/consultancy-programs", authMiddleware, consultancyProgramController.destroyMany);
 
 module.exports = mainRoutes;

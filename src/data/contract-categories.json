@@ -1,0 +1,40 @@
+[
+  {
+    "code": "E",
+    "name": "Employment",
+    "subCategories": [
+      {
+        "code": "P",
+        "name": "PKWTT",
+        "variants": [
+          {
+            "code": "1",
+            "name": "Regular"
+          }
+        ]
+      },
+      {
+        "code": "C",
+        "name": "PKWT",
+        "variants": [
+          {
+            "code": "1",
+            "name": "Regular"
+          },
+          {
+            "code": "2",
+            "name": "Consultant"
+          },
+          {
+            "code": "3",
+            "name": "Trainee"
+          },
+          {
+            "code": "4",
+            "name": "Auditor"
+          }
+        ]
+      }
+    ]
+  }
+]
