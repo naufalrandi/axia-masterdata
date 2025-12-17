@@ -41,12 +41,21 @@ const checkData = async (where) => {
 };
 
 const getAll = async (data) => {
-  const { page, limit, offset, orderby, sortBy, search } = data;
+  const {
+    page,
+    limit,
+    offset,
+    orderby,
+    sortBy,
+    search,
+    contractSubcategoryId,
+  } = data;
   const fieldSearch = searchData(["name", "description"], search);
 
   const result = await model.ContractVariant.findAndCountAll({
     where: {
       ...fieldSearch,
+      ...(contractSubcategoryId && { contractSubcategoryId }),
     },
     include: [
       {

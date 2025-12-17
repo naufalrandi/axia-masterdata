@@ -31,12 +31,14 @@ const checkData = async (where) => {
 };
 
 const getAll = async (data) => {
-  const { page, limit, offset, orderby, sortBy, search } = data;
+  const { page, limit, offset, orderby, sortBy, search, contractCategoryId } =
+    data;
   const fieldSearch = searchData(["code", "name", "description"], search);
 
   const result = await model.ContractSubcategory.findAndCountAll({
     where: {
       ...fieldSearch,
+      ...(contractCategoryId && { contractCategoryId }),
     },
     include: [
       {
@@ -60,11 +62,13 @@ const create = async (data) => {
     const categoryExists = await model.ContractCategory.findOne({
       where: { id: data.contractCategoryId },
     });
-    if (!categoryExists) throw new ResponseError(400, "Contract category not found");
+    if (!categoryExists)
+      throw new ResponseError(400, "Contract category not found");
   }
 
   const nameExists = await checkData({ name: data.name });
-  if (nameExists) throw new ResponseError(400, "Contract subcategory name already exists");
+  if (nameExists)
+    throw new ResponseError(400, "Contract subcategory name already exists");
 
   const codeExists = await checkData({ code: data.code });
   if (codeExists) throw new ResponseError(400, "Code already exists");
@@ -87,7 +91,8 @@ const update = async (id, data) => {
     const categoryExists = await model.ContractCategory.findOne({
       where: { id: data.contractCategoryId },
     });
-    if (!categoryExists) throw new ResponseError(400, "Contract category not found");
+    if (!categoryExists)
+      throw new ResponseError(400, "Contract category not found");
   }
 
   const nameExists = await checkData({
@@ -97,7 +102,8 @@ const update = async (id, data) => {
     name: data.name,
   });
 
-  if (nameExists) throw new ResponseError(400, "Contract subcategory name already exists");
+  if (nameExists)
+    throw new ResponseError(400, "Contract subcategory name already exists");
 
   const codeExists = await checkData({
     id: {
