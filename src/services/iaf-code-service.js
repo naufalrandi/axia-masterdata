@@ -15,7 +15,7 @@ const getData = async (id) => {
   });
 
   if (!result) throw new ResponseError(404, "Data not found");
-  return result.dataValues;
+  return result;
 };
 
 const checkData = async (where) => {
