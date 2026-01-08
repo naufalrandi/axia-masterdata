@@ -50,6 +50,13 @@ const getAll = async (data) => {
     limit,
     offset,
     order: [[sortBy, orderby]],
+    include: [
+      {
+        model: model.SchemeTag,
+        as: "schemeTag",
+        attributes: { exclude: ["createdAt", "updatedAt"] },
+      },
+    ],
   });
 
   return pagination(result, page, limit);
