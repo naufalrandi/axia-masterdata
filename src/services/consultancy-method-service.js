@@ -34,7 +34,7 @@ const getAll = async (data) => {
     },
     limit,
     offset,
-    attributes: {exclude: ['durations', 'updatedAt']},
+    attributes: { exclude: ["updatedAt"] },
     order: [[sortBy, orderby]],
   });
 
