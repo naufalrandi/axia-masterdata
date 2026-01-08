@@ -54,8 +54,8 @@ const getAll = async (data) => {
 
 const create = async (data) => {
   data = validate(createCountryValidation, data);
-  const languageIds = data.languages.map((item) => item.id);
-  const currencyIds = data.currencies.map((item) => item.id);
+  const languageIds = data.languages?.map((item) => item.id) || [];
+  const currencyIds = data.currencies?.map((item) => item.id) || [];
   delete data.languages;
   delete data.currencies;
 
@@ -84,8 +84,8 @@ const getOne = async (id) => {
 const update = async (id, data) => {
   data.id = id;
   data = validate(updateCountryValidation, data);
-  const languageIds = data.languages.map((item) => item.id);
-  const currencyIds = data.currencies.map((item) => item.id);
+  const languageIds = data.languages?.map((item) => item.id) || [];
+  const currencyIds = data.currencies?.map((item) => item.id) || [];
   delete data.languages;
   delete data.currencies;
 
