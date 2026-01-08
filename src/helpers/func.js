@@ -160,6 +160,30 @@ async function generateTrainingCourseCode(transaction = null) {
   };
 }
 
+async function syncDataHasMany(payload, transaction) {
+  const { currentModel, where, data } = payload;
+  const existingIds = await currentModel.findAll({
+    where,
+    attributes: ["id"],
+  });
+
+  const incomingIds = data.map((item) => item.id).filter(Boolean);
+  const idsToDelete = existingIds
+    .filter((item) => !incomingIds.includes(item.id))
+    .map((item) => item.id);
+
+  if (idsToDelete.length > 0) {
+    await currentModel.destroy({
+      where: {
+        id: {
+          [Op.in]: idsToDelete,
+        },
+      },
+      transaction,
+    });
+  }
+}
+
 module.exports = {
   generateToken,
   generateRefreshToken,
@@ -176,4 +200,5 @@ module.exports = {
   generateContractVariantCode,
   generateContractVariantCode,
   generateTrainingCourseCode,
+  syncDataHasMany,
 };

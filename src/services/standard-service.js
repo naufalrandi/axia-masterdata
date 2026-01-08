@@ -1,5 +1,5 @@
 const model = require("../models/index");
-const { searchData, pagination } = require("../helpers/func");
+const { searchData, pagination, syncDataHasMany } = require("../helpers/func");
 const { Op } = require("sequelize");
 const { ResponseError } = require("../errors/response-error");
 const validate = require("../validations/validation");
@@ -59,7 +59,15 @@ const create = async (data) => {
   data = validate(createStandardValidation, data);
 
   await getSchemeTag(data.schemeTagId);
-  return await model.Standard.create(data);
+  return await model.sequelize.transaction(async (transaction) => {
+    const standard = await model.Standard.create(data, { transaction });
+    for (const clause of data.standardClauses) {
+      clause.standardId = standard.id;
+      await model.StandardClause.create(clause, { transaction });
+    }
+
+    return standard;
+  });
 };
 
 const getOne = async (id) => {
@@ -71,7 +79,36 @@ const update = async (id, data) => {
   data = validate(updateStandardValidation, data);
 
   await getSchemeTag(data.schemeTagId);
-  return await model.Standard.update(data, { where: { id } });
+  return await model.sequelize.transaction(async (transaction) => {
+    const standard = await getData(id);
+    await standard.update(data, { transaction });
+
+    // Update StandardClauses
+    for (const clause of data.standardClauses) {
+      if (clause.id) {
+        await model.StandardClause.update(clause, { where: { id: clause.id } });
+      } else {
+        clause.standardId = id;
+        const result = await model.StandardClause.create(clause, {
+          transaction,
+        });
+
+        clause.id = result.id;
+      }
+    }
+
+    // Sync StandardClauses
+    await syncDataHasMany(
+      {
+        currentModel: model.StandardClause,
+        where: { standardId: id },
+        data: data.standardClauses,
+      },
+      transaction
+    );
+
+    return standard;
+  });
 };
 
 const destroy = async (id) => {

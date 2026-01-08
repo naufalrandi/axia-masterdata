@@ -9,6 +9,17 @@ const createStandardValidation = Joi.object({
   title: Joi.string().required(),
   rate: Joi.number().required(),
   document: Joi.string().optional(),
+  standardClauses: Joi.array()
+    .items(
+      Joi.object({
+        standardId: Joi.string().uuid().required(),
+        clauseNumber: Joi.string().required(),
+        title: Joi.string().required(),
+        description: Joi.string().optional().allow("", null),
+      })
+    )
+    .min(1)
+    .required(),
 });
 
 const updateStandardValidation = Joi.object({
@@ -21,6 +32,18 @@ const updateStandardValidation = Joi.object({
   title: Joi.string().required(),
   rate: Joi.number().required(),
   document: Joi.string().optional(),
+  standardClauses: Joi.array()
+    .items(
+      Joi.object({
+        id: Joi.number().optional().allow(null),
+        standardId: Joi.string().uuid().required(),
+        clauseNumber: Joi.string().required(),
+        title: Joi.string().required(),
+        description: Joi.string().optional().allow("", null),
+      })
+    )
+    .min(1)
+    .required(),
 });
 
 const updateStandardManyValidation = Joi.object({
