@@ -7,7 +7,7 @@ const createVillageValidation = Joi.object({
 });
 
 const updateVillageValidation = Joi.object({
-  slug: Joi.string().required(),
+  id: Joi.number().required(),
   name: Joi.string().max(100).required(),
   districtId: Joi.number().required(),
   latlng: Joi.array().optional(),

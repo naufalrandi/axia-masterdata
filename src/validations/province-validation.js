@@ -7,7 +7,7 @@ const createProvinceValidation = Joi.object({
 });
 
 const updateProvinceValidation = Joi.object({
-  slug: Joi.string().required(),
+  id: Joi.number().required(),
   name: Joi.string().max(100).required(),
   countryId: Joi.number().required(),
   latlng: Joi.array().optional(),

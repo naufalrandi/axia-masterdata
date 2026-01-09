@@ -28,7 +28,7 @@ const createCountryValidation = Joi.object({
 });
 
 const updateCountryValidation = Joi.object({
-  slug: Joi.string().required(),
+  id: Joi.number().required(),
   name: Joi.string().max(100).required(),
   cca2: Joi.string().max(2).required(),
   cca3: Joi.string().max(3).required(),
