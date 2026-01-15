@@ -31,7 +31,16 @@ const checkData = async (where) => {
 };
 
 const getAll = async (data) => {
-  const { page, limit, offset, orderby, sortBy, search, provinceId } = data;
+  const {
+    page,
+    limit,
+    offset,
+    orderby,
+    sortBy,
+    search,
+    provinceId,
+    countryId,
+  } = data;
   const fieldSearch = searchData(["name"], search);
 
   const result = await model.City.findAndCountAll({
@@ -41,6 +50,18 @@ const getAll = async (data) => {
         provinceId,
       }),
     },
+    include: [
+      {
+        model: model.Province,
+        as: "province",
+        attributes: [],
+        where: {
+          ...(countryId && {
+            countryId,
+          }),
+        },
+      },
+    ],
     limit,
     offset,
     order: [[sortBy, orderby]],
