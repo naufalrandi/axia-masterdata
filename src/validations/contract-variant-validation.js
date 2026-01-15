@@ -3,14 +3,14 @@ const Joi = require("joi");
 const createContractVariantValidation = Joi.object({
   contractSubcategoryId: Joi.number().optional(),
   name: Joi.string().max(100).required(),
-  description: Joi.string().optional(),
+  description: Joi.string().optional().allow("", null),
 });
 
 const updateContractVariantValidation = Joi.object({
   id: Joi.number().required(),
   contractSubcategoryId: Joi.number().optional(),
   name: Joi.string().max(100).required(),
-  description: Joi.string().optional(),
+  description: Joi.string().optional().allow("", null),
 });
 
 const updateContractVariantManyValidation = Joi.object({

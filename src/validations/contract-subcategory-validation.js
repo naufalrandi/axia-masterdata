@@ -4,7 +4,7 @@ const createContractSubcategoryValidation = Joi.object({
   code: Joi.string().max(50).required(),
   name: Joi.string().max(100).required(),
   description: Joi.string().optional(),
-  contractCategoryId: Joi.number().optional(),
+  contractCategoryId: Joi.number().optional().allow("", null),
 });
 
 const updateContractSubcategoryValidation = Joi.object({
@@ -12,7 +12,7 @@ const updateContractSubcategoryValidation = Joi.object({
   code: Joi.string().max(50).required(),
   name: Joi.string().max(100).required(),
   description: Joi.string().optional(),
-  contractCategoryId: Joi.number().optional(),
+  contractCategoryId: Joi.number().optional().allow("", null),
 });
 
 const updateContractSubcategoryManyValidation = Joi.object({
