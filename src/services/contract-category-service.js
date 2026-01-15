@@ -43,8 +43,8 @@ const getAll = async (data) => {
 const create = async (data) => {
   data = validate(createContractCategoryValidation, data);
 
-  const nameExists = await checkData({ name: data.name });
-  if (nameExists) throw new ResponseError(400, "Contract category name already exists");
+  // const nameExists = await checkData({ name: data.name });
+  // if (nameExists) throw new ResponseError(400, "Contract category name already exists");
 
   const codeExists = await checkData({ code: data.code });
   if (codeExists) throw new ResponseError(400, "Code already exists");
@@ -62,14 +62,15 @@ const update = async (id, data) => {
 
   await getData(id);
 
-  const nameExists = await checkData({
-    id: {
-      [Op.ne]: id,
-    },
-    name: data.name,
-  });
+  // const nameExists = await checkData({
+  //   id: {
+  //     [Op.ne]: id,
+  //   },
+  //   name: data.name,
+  // });
 
-  if (nameExists) throw new ResponseError(400, "Contract category name already exists");
+  // if (nameExists)
+  //   throw new ResponseError(400, "Contract category name already exists");
 
   const codeExists = await checkData({
     id: {

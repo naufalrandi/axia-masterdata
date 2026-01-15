@@ -110,15 +110,15 @@ const update = async (id, data) => {
       throw new ResponseError(400, "Contract subcategory not found");
   }
 
-  const nameExists = await checkData({
-    id: {
-      [Op.ne]: id,
-    },
-    name: data.name,
-  });
+  // const nameExists = await checkData({
+  //   id: {
+  //     [Op.ne]: id,
+  //   },
+  //   name: data.name,
+  // });
 
-  if (nameExists)
-    throw new ResponseError(400, "Contract variant name already exists");
+  // if (nameExists)
+  //   throw new ResponseError(400, "Contract variant name already exists");
 
   return await model.ContractVariant.update(data, { where: { id } });
 };
