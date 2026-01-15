@@ -70,8 +70,8 @@ const create = async (data) => {
   // if (nameExists)
   //   throw new ResponseError(400, "Contract subcategory name already exists");
 
-  const codeExists = await checkData({ code: data.code });
-  if (codeExists) throw new ResponseError(400, "Code already exists");
+  // const codeExists = await checkData({ code: data.code });
+  // if (codeExists) throw new ResponseError(400, "Code already exists");
 
   return await model.ContractSubcategory.create(data);
 };
@@ -105,14 +105,14 @@ const update = async (id, data) => {
   // if (nameExists)
   //   throw new ResponseError(400, "Contract subcategory name already exists");
 
-  const codeExists = await checkData({
-    id: {
-      [Op.ne]: id,
-    },
-    code: data.code,
-  });
+  // const codeExists = await checkData({
+  //   id: {
+  //     [Op.ne]: id,
+  //   },
+  //   code: data.code,
+  // });
 
-  if (codeExists) throw new ResponseError(400, "Code already exists");
+  // if (codeExists) throw new ResponseError(400, "Code already exists");
 
   return await model.ContractSubcategory.update(data, { where: { id } });
 };
