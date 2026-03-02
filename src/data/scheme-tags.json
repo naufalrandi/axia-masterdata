@@ -1,0 +1,22 @@
+[
+  {
+    "sortName": "QMS",
+    "name": "Quality Management System"
+  },
+  {
+    "sortName": "EMS",
+    "name": "Environmental Management System"
+  },
+  {
+    "sortName": "OHSMS",
+    "name": "Occupational Health and Safety Management System"
+  },
+  {
+    "sortName": "ISMS",
+    "name": "Information Security Management System"
+  },
+  {
+    "sortName": "EnMS",
+    "name": "Energy Management System"
+  }
+]

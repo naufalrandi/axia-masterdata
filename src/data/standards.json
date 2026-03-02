@@ -1,0 +1,47 @@
+[
+  {
+    "schemeTag": "QMS",
+    "prefix": "ISO",
+    "standardNumber": "9001",
+    "issueYear": 2015,
+    "type": ["Requirement"],
+    "title": "Quality management systems â€” Requirements",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "EMS",
+    "prefix": "ISO",
+    "standardNumber": "14001",
+    "issueYear": 2015,
+    "type": ["Requirement", "Guideline"],
+    "title": "Environmental management systems â€” Requirements with guidance for use",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "OHSMS",
+    "prefix": "ISO",
+    "standardNumber": "45001",
+    "issueYear": 2018,
+    "type": ["Requirement", "Guideline"],
+    "title": "Occupational health and safety management systems â€” Requirements with guidance for use",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "ISMS",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27000",
+    "issueYear": 2018,
+    "type": ["Guideline"],
+    "title": "Information technology â€” Security techniques â€” Information security management systems â€” Overview and vocabulary",
+    "rate": 0
+  },
+  {
+    "schemeTag": "ISMS",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27001",
+    "issueYear": 2022,
+    "type": ["Requirement"],
+    "title": "Information security, cybersecurity and privacy protection â€” Information security management systems â€” Requirements",
+    "rate": 11000000
+  }
+]

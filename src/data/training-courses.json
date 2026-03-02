@@ -1,0 +1,38 @@
+[
+  {
+    "runningNumber": 1,
+    "code": "72001",
+    "courseTier": "Level 1 Overview, concepts, and principles",
+    "courseGroup": "Resilience, Information Security, and Privacy",
+    "courseTitle": "Understanding the concepts and principles of Information Security Management Systems based on ISO/IEC 27000:2018 and ISO/IEC 27001:2022",
+    "exam": false,
+    "courseDuration": 2,
+    "maxAttendance": 30,
+    "rate": 12000000,
+    "standards": [27000, 27001],
+    "courseOutline": [
+      "Information security concepts and principles",
+      "ISO/IEC 27001:2022 standard requirements",
+      "ISO/IEC 27001:2022 Annex A security controls",
+      "ISO/IEC 27001:2022 certification roadmap"
+    ]
+  },
+  {
+    "runningNumber": 2,
+    "code": "72002",
+    "courseTier": "Level 1 Overview, concepts, and principles",
+    "courseGroup": "Resilience, Information Security, and Privacy",
+    "courseTitle": "Understanding the concepts and principles of Information Security Management Systems based on ISO/IEC 27000:2018 and ISO/IEC 27001:2022",
+    "exam": false,
+    "courseDuration": 1,
+    "maxAttendance": 30,
+    "rate": 12000000,
+    "standards": [27000, 27001],
+    "courseOutline": [
+      "Information security concepts and principles",
+      "ISO/IEC 27001:2022 standard requirements",
+      "ISO/IEC 27001:2022 Annex A security controls",
+      "ISO/IEC 27001:2022 certification roadmap"
+    ]
+  }
+]
