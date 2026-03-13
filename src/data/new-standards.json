@@ -1,0 +1,497 @@
+[
+  {
+    "schemeTag": "QMS",
+    "prefix": "ISO",
+    "standardNumber": "10001",
+    "issueYear": 2018,
+    "type": ["Guidelines"],
+    "title": "Quality management — Customer satisfaction — Guidelines for codes of conduct for organizations",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "10002",
+    "issueYear": 2018,
+    "type": ["Guidelines"],
+    "title": "Quality management — Customer satisfaction — Guidelines for complaints handling in organizations",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "10003",
+    "issueYear": 2018,
+    "type": ["Guidelines"],
+    "title": "Quality management — Customer satisfaction — Guidelines for dispute resolution external to organizations",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "10004",
+    "issueYear": 2018,
+    "type": ["Guidelines"],
+    "title": "Quality management — Customer satisfaction — Guidelines for monitoring and measuring",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "10005",
+    "issueYear": 2018,
+    "type": ["Guidelines"],
+    "title": "Quality management — Guidelines for quality plans",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "10006",
+    "issueYear": 2017,
+    "type": ["Guidelines"],
+    "title": "Quality management — Guidelines for quality management in projects",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "10007",
+    "issueYear": 2017,
+    "type": ["Guidelines"],
+    "title": "Quality management — Guidelines for configuration management",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "10008",
+    "issueYear": 2022,
+    "type": ["Guidelines"],
+    "title": "Quality management — Customer satisfaction — Guidance for business-to-consumer electronic commerce transactions",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "10009",
+    "issueYear": 2024,
+    "type": ["Guidelines"],
+    "title": "Quality management — Guidance for quality tools and their application",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "10010",
+    "issueYear": 2022,
+    "type": ["Guidelines"],
+    "title": "Quality management — Guidance to understand, evaluate and improve organizational quality culture",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "10012",
+    "issueYear": 2003,
+    "type": ["Requirement"],
+    "title": "Measurement management systems — Requirements for measurement processes and measuring equipment",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "10013",
+    "issueYear": 2021,
+    "type": ["Guidelines"],
+    "title": "Quality management systems — Guidance for documented information",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "10014",
+    "issueYear": 2021,
+    "type": ["Guidelines"],
+    "title": "Quality management systems — Managing an organization for quality results — Guidance for realizing financial and economic benefits",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "EMS",
+    "prefix": "ISO",
+    "standardNumber": "14001",
+    "issueYear": 2015,
+    "type": ["Requirement"],
+    "title": "Environmental management systems — Requirements with guidance for use",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "QMS",
+    "prefix": "ISO",
+    "standardNumber": "15489-1",
+    "issueYear": 2016,
+    "type": ["Concepts", "Principles"],
+    "title": "Information and documentation — Records management — Part 1: Concepts and principles",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "QMS",
+    "prefix": "ISO",
+    "standardNumber": "19011",
+    "issueYear": 2018,
+    "type": ["Guidelines"],
+    "title": "Guidelines for auditing management systems",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "22000",
+    "issueYear": 2018,
+    "type": ["Requirement"],
+    "title": "Food safety management systems — Requirements for any organization in the food chain",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "22301",
+    "issueYear": 2019,
+    "type": ["Requirement"],
+    "title": "Security and resilience — Business continuity management systems — Requirements",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "37001",
+    "issueYear": 2025,
+    "type": ["Requirement"],
+    "title": "Anti-bribery management systems — Requirements with guidance for use",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "OHSMS",
+    "prefix": "ISO",
+    "standardNumber": "45001",
+    "issueYear": 2018,
+    "type": ["Requirement"],
+    "title": "Occupational health and safety management systems — Requirements with guidance for use",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "55001",
+    "issueYear": 2018,
+    "type": ["Requirement"],
+    "title": "Energy management systems — Requirements with guidance for use",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO",
+    "standardNumber": "9000",
+    "issueYear": 2015,
+    "type": ["Fundamentals", "Vocabulary"],
+    "title": "Quality management systems — Fundamentals and vocabulary",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "QMS",
+    "prefix": "ISO",
+    "standardNumber": "9001",
+    "issueYear": 2015,
+    "type": ["Requirement"],
+    "title": "Quality management systems — Requirements",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "QMS",
+    "prefix": "ISO/IEC",
+    "standardNumber": "20000-1",
+    "issueYear": 2018,
+    "type": ["Requirement"],
+    "title": "Information technology — Service management Part 1: Service management system requirements",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "20889",
+    "issueYear": 2018,
+    "type": ["Terminology", "Classification"],
+    "title": "Privacy enhancing data de-identification terminology and classification of techniques",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27000",
+    "issueYear": 2018,
+    "type": ["Overview", "Vocabulary"],
+    "title": "Information technology — Security techniques — Information security management systems — Overview and vocabulary",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "ISMS",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27001",
+    "issueYear": 2013,
+    "type": ["Requirement"],
+    "title": "Information technology — Security techniques — Information security management systems — Requirements",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "ISMS",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27001",
+    "issueYear": 2022,
+    "type": ["Requirement"],
+    "title": "Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27002",
+    "issueYear": 2022,
+    "type": ["Security controls"],
+    "title": "Information security, cybersecurity and privacy protection — Information security controls",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27003",
+    "issueYear": 2017,
+    "type": ["Guidance"],
+    "title": "Information technology — Security techniques — Information security management systems — Guidance",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27004",
+    "issueYear": 2016,
+    "type": ["Monitoring", "Measurement", "Analysis", "Evaluation"],
+    "title": "Information technology — Security techniques — Information security management — Monitoring, measurement, analysis and evaluation",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27005",
+    "issueYear": 2022,
+    "type": ["Guidance"],
+    "title": "Information security, cybersecurity and privacy protection — Guidance on managing information security risks",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27007",
+    "issueYear": 2020,
+    "type": ["Guidelines"],
+    "title": "Information technology — Security techniques — Guidelines for information security management systems auditing",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27008",
+    "issueYear": 2019,
+    "type": ["Guidelines"],
+    "title": "Information technology — Security techniques — Guidelines for the assessment of information security controls",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27017",
+    "issueYear": 2015,
+    "type": ["Code of practice"],
+    "title": "Information technology — Security techniques — Code of practice for information security controls based on ISO/IEC 27002 for cloud services",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27018",
+    "issueYear": 2019,
+    "type": ["Guidelines"],
+    "title": "Information technology, security, cybersecurity and privacy protection — Guidelines for protection of personally identifiable information (PII) in public clouds acting as PII processors",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27555",
+    "issueYear": 2021,
+    "type": ["Guidelines"],
+    "title": "Information security, cybersecurity and privacy protection — Guidelines on personally identifiable information deletion",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27701",
+    "issueYear": 2019,
+    "type": ["Requirement", "Guidelines"],
+    "title": "Security techniques — Extension to ISO/IEC 27001 and ISO/IEC 27002 for privacy information management — Requirements and guidelines",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27701",
+    "issueYear": 2024,
+    "type": ["Requirement", "Guidelines"],
+    "title": "Security techniques — Extension to ISO/IEC 27001 and ISO/IEC 27002 for privacy information management — Requirements and guidelines",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "27799",
+    "issueYear": 2016,
+    "type": ["Requirement"],
+    "title": "Health informatics — Information security management in health using ISO/IEC 27002",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "29100",
+    "issueYear": 2024,
+    "type": ["Privacy framework"],
+    "title": "Information technology — Security techniques — Privacy framework",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "29101",
+    "issueYear": 2018,
+    "type": ["Privacy architecture framework"],
+    "title": "Information technology — Security techniques — Privacy architecture framework",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "29134",
+    "issueYear": 2023,
+    "type": ["Guidelines"],
+    "title": "Information technology — Security techniques — Guidelines for privacy impact assessment",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "29151",
+    "issueYear": 2017,
+    "type": ["Code of practice"],
+    "title": "Information technology — Security techniques — Code of practice for personally identifiable information protection",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "QMS",
+    "prefix": "ISO/TS",
+    "standardNumber": "9002",
+    "issueYear": 2015,
+    "type": ["Guidelines"],
+    "title": "Quality management systems — Guidelines for the application of ISO 9001:2015",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "OHSMS",
+    "prefix": "ISO",
+    "standardNumber": "45002",
+    "issueYear": 2023,
+    "type": ["General guidelines"],
+    "title": "Occupational health and safety management systems — General guidelines for the implementation of ISO 45001:2018",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "QMS",
+    "prefix": "ISO",
+    "standardNumber": "30301",
+    "issueYear": 2019,
+    "type": ["Requirement"],
+    "title": "Information and documentation — Management systems for records — Requirements",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "EMS",
+    "prefix": "ISO",
+    "standardNumber": "14004",
+    "issueYear": 2016,
+    "type": ["General guidelines"],
+    "title": "Environmental management systems — General guidelines on implementation",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "ISMS",
+    "prefix": "ISO/IEC",
+    "standardNumber": "29147",
+    "issueYear": 2018,
+    "type": ["Vulnerability disclosure"],
+    "title": "Information technology — Security techniques — Vulnerability disclosure",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "ISMS",
+    "prefix": "POJK",
+    "standardNumber": "75",
+    "issueYear": 2016,
+    "type": ["Standard"],
+    "title": "Standar Penyelenggaraan Teknologi Informasi bagi Bank Perkreditan Rakyat dan Bank Pembiayaan Rakyat Syariah",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "ISMS",
+    "prefix": "SEOJK",
+    "standardNumber": "15",
+    "issueYear": 2017,
+    "type": ["Standard"],
+    "title": "Standar Penyelenggaraan Teknologi Informasi bagi Bank Perkreditan Rakyat dan Bank Pembiayaan Rakyat Syariah",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "QMS",
+    "prefix": "ISO",
+    "standardNumber": "37301",
+    "issueYear": 2021,
+    "type": ["Requirement"],
+    "title": "Compliance management systems — Requirements with guidance for use",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "QMS",
+    "prefix": "ISO",
+    "standardNumber": "31000",
+    "issueYear": 2018,
+    "type": ["Guidelines"],
+    "title": "Risk management — Guidelines",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "QMS",
+    "prefix": "ISO",
+    "standardNumber": "31010",
+    "issueYear": 2019,
+    "type": ["Risk assessment"],
+    "title": "Risk management — Risk assessment techniques",
+    "rate": 9000000
+  },
+  {
+    "schemeTag": "",
+    "prefix": "ISO/IEC",
+    "standardNumber": "42001",
+    "issueYear": 2023,
+    "type": ["AIMS"],
+    "title": "Artificial Intelligence Management System (AIMS).",
+    "rate": 9000000
+  }
+]
