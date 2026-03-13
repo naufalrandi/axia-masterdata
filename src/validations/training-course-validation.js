@@ -41,7 +41,7 @@ const updateTrainingCourseValidation = Joi.object({
   courseTitle: Joi.string().max(255).required(),
   maxAttendance: Joi.number().integer().positive().required(),
   courseDuration: Joi.number().positive().required(),
-  rate: Joi.number().integer().positive().required(),
+  rate: Joi.number().integer().required(),
   prerequisites: Joi.array()
     .items(
       Joi.object({
