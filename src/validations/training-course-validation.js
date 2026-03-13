@@ -30,8 +30,8 @@ const createTrainingCourseValidation = Joi.object({
         id: Joi.string().uuid().required(),
       })
     )
-    .required()
-    .min(1),
+    .optional()
+    .allow(null),
 });
 
 const updateTrainingCourseValidation = Joi.object({
@@ -65,8 +65,8 @@ const updateTrainingCourseValidation = Joi.object({
         id: Joi.string().uuid().required(),
       })
     )
-    .required()
-    .min(1),
+    .optional()
+    .allow(null),
 });
 
 const updateTrainingCourseManyValidation = Joi.object({
