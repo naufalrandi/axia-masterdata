@@ -18,8 +18,8 @@ const createStandardValidation = Joi.object({
         description: Joi.string().optional().allow("", null),
       })
     )
-    .min(1)
-    .required(),
+    .optional()
+    .allow(null),
 });
 
 const updateStandardValidation = Joi.object({
@@ -42,8 +42,8 @@ const updateStandardValidation = Joi.object({
         description: Joi.string().optional().allow("", null),
       })
     )
-    .min(1)
-    .required(),
+    .optional()
+    .allow(null),
 });
 
 const updateStandardManyValidation = Joi.object({
