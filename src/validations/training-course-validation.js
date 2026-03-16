@@ -17,9 +17,7 @@ const createTrainingCourseValidation = Joi.object({
     .allow(null),
   courseOutline: Joi.array()
     .items(
-      Joi.object({
-        title: Joi.string().required(),
-      })
+      Joi.string().optional().allow(null),
     )
     .optional()
     .allow(null),
@@ -52,9 +50,7 @@ const updateTrainingCourseValidation = Joi.object({
     .allow(null),
   courseOutline: Joi.array()
     .items(
-      Joi.object({
-        title: Joi.string().required(),
-      })
+      Joi.string().optional().allow(null),
     )
     .optional()
     .allow(null),
