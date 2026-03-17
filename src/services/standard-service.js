@@ -41,7 +41,7 @@ const getSchemeTag = async (id) => {
 
 const getAll = async (data) => {
   const { page, limit, offset, orderby, sortBy, search } = data;
-  const fieldSearch = searchData(["prefix", "title"], search);
+  const fieldSearch = searchData(["prefix", "title", "standardNumber"], search);
 
   const result = await model.Standard.findAndCountAll({
     where: {

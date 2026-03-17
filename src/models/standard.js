@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       schemeTagId: DataTypes.UUID,
       prefix: DataTypes.STRING,
-      standardNumber: DataTypes.INTEGER,
+      standardNumber: DataTypes.STRING,
       issueYear: DataTypes.INTEGER,
       type: DataTypes.JSONB,
       title: DataTypes.STRING,
